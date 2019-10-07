@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        var a = parseInt(prompt('你考了几分'));
+        if(a>60){
+            alert('可以,给你个棒棒糖')
+        }else{
+            alert('来  给你一巴掌')
+        }
+    </script> -->
+    <!-- <script>
+        var a = parseInt(
+            prompt('要加92还是97')
+            );
+        var b = parseInt(
+            prompt('要加多少升')
+            )
+        var c = null;
+        if(a==92){
+            if(b>20){
+                c = 5;
+            }else{
+                c = 4;
+            }
+        }
+        if(a==97){
+            if(b>20){
+                c = 6;
+            }else{
+                c = 5;
+            }
+        }
+        c = c*b;
+        alert('一共'+c+'元')
+    </script> -->
+    <!-- <script>
+        4>3 ? alert('大') : alert('小');
+    
+    </script> -->
+    <!-- <script>
+        var a = 'a';
+        var b = 1;
+        switch(a){
+            case 1:
+                alert('对了');
+                break;
+            case 2:
+                alert('错了');
+                break;
+            case 's':
+                alert('可以');
+                break;
+            default:
+                alert('木有a 臭傻逼');
+                break;
+
+        }
+    </script> -->
+    <!-- <script>
+    var str = new Date();
+    var year = str.getFullYear();
+    var Month = str.getMonth();
+    var date = str.getDate();
+    var hours = str.getHours();
+    var min = str.getMinutes();
+    var sec = str.getSeconds();
+    var sec1 = str.getMilliseconds();
+    console.log(year);
+    console.log(Month);
+    console.log(date);
+    console.log(hours);
+    console.log(min);
+    console.log(sec);
+    console.log(sec1);
+    console.log(year+'年'+Month+'月'+date+'日'+hours
+    +'时'+min+'分'+sec+'秒'+sec1+'微秒')
+    console.log(str.getTime());
+    </script> -->
+    <!-- <script>
+        var i = 0;
+        var v = 5000;
+        while (i < 5) {
+            i++
+        };
+        console.log(i);
+    </script> -->
+    <!-- <script>
+        // for (var j = 1; j < 3; j++) {
+            for (var i = 1; i < 100; i++) {
+                if (i % 10 == 0) {
+                    console.log(i);
+                    continue;
+                    console.log(i);
+                }
+            }
+        // }
+
+
+    </script> -->
+    <!-- <script>
+        // for (var i = 1; i < 10; i++) {
+        //     var s = '';
+        //     for (var j = 1; j <=i; j++) {
+        //         s =  s + j + '*' + i + '=' + i * j + ';';
+        //     }
+        //     console.log(s);
+        // }
+        var i = 1+2+'';
+        console.log(i)
+    </script> -->
+    <script>
+        var arr = [12, 23, 32,12,3,2,423,24,543]
+        for (var i = 0; i < arr.length - 1; i++) {
+            var v = i;
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[v] < arr[j]) {
+                    v = j;
+                }
+            }
+            if(v !== i ){
+                var s = arr[i];
+                arr[i] = arr[v];
+                arr[v] = s;
+            }
+           
+        }
+        console.log(arr);
+
+    </script>
+</body>
+
+</html>

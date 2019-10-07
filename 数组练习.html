@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+    var arr = new Array(3,5);
+    arr[1] = 1;
+    console.log(arr);
+    
+    </script> -->
+    <!-- <script>
+        var arr = [2,3,42,3,3];
+        console.log(arr.length);
+        arr.length = 9;
+        console.log(arr);
+    
+    </script> -->
+    <!-- <script>
+        var arr = [12,32,41,43,1,2]
+        var a = 0;
+        for(var i= 0;i<arr.length;i++){
+            console.log(arr[i]);
+            a = a+arr[i];
+        }
+        console.log(a/arr.length)
+    </script> -->
+    <!-- <script>
+        var arr = '你撒;飒飒好';
+        var arr1 = [11,23,45];
+        var arr2 = [23,34,45];
+        var a = arr.split('',3);
+        console.log(arr);
+        console.log(a)
+    </script> -->
+    <!-- <script>
+        var arr = [12, 321, 2, 13223, 412, 321, 3312]
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = 0; j < arr.length - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    var a = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = a;
+                }
+            }
+        }
+        console.log(arr);
+
+    </script> -->
+    <!-- <script>
+        var arr = [12,32,434,45,56,46]
+        for(var i = 0; i<arr.length-1;i++){
+            var s = i ;
+            for(var j = i+1;j<arr.length;j++){
+                if(arr[s]<arr[j]){
+                    s = j;
+                }
+            }
+            if(s !== i){
+                var v = arr[i];
+                arr[i] = arr[s];
+                arr[s] = v;
+            }
+        }
+        console.log(arr);
+    </script> -->
+    <!-- <script>
+        var arr = [21, 3234, 23, 34, 54, 563, 32];
+        for (var i = 1; i < arr.length; i++) {
+            var v = arr[i];
+            var j = i - 1;
+            while (j >= 0 && v < arr[j]) {
+                arr[j + 1] = arr[j];
+                j--;
+            }
+            arr[j + 1] = v;
+        }
+        console.log(arr);
+    </script> -->
+    <script>
+        var arr = [
+            {
+                name: "小明",
+                height: 172,
+                age: 24,
+            },
+            {
+                name: "小张",
+                height: 176,
+                age: 21,
+            },
+            {
+                name: "小红",
+                height: 160,
+                age: 22,
+            },
+            {
+                name: "小王",
+                height: 173,
+                age: 21,
+            },
+            {
+                name: "小赵",
+                height: 173,
+                age: 22,
+            },
+        ];
+        var a = arr.sort(function (a, b) {
+            if (a.age === b.age) {
+                return b.height - a.height;
+            }
+            return b.age - a.age;
+        });
+        console.log(arr);
+    </script>
+</body>
+
+</html>
